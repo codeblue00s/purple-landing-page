@@ -1,0 +1,109 @@
+/* Importando fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* ============================= */
+/* SEÇÃO HERO (Container principal) */
+/* ============================= */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+/* ============================= */
+/* VÍDEO DE FUNDO */
+/* ============================= */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+/* ============================= */
+/* CONTEÚDO PRINCIPAL DA HERO */
+/* ============================= */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1; 
+}
+
+/* Título principal */
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 1.2;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+
+    /* Animação e transição */
+    animation: slideDown 1s ease-out forwards;
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito no hover do título */
+.hero-content h1:hover {
+    text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.8);
+    color: white;
+}
+
+/* Parágrafo */
+.hero-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 20px auto 0;
+    text-align: left;
+    color: #ffffff;
+}
+
+/* ============================= */
+/* BOTÕES DA HERO */
+/* ============================= */
+.hero-buttons {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo base dos botões */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Botão primário */
+.cta-button.primary {
+    background-color: purple;
+    color: white;
+}
+.cta-button.primary:hover {
+    background-color: #4B0082;
+}
+
+/* Botão secundário */
+.cta-button.secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid purple;
+}
+.cta-button.secondary:hover {
+    background-color: #4B0082;
+    color: white;
+}

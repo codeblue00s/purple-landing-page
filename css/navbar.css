@@ -1,0 +1,62 @@
+/* ============================= */
+/* NAVBAR (Container principal) */
+/* ============================= */
+.navbar {
+    background: linear-gradient(to left, #4b0082, #1a001a);
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 5rem;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+/* ============================= */
+/* LOGO */
+/* ============================= */
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* ============================= */
+/* MENU DE NAVEGAÇÃO */
+/* ============================= */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 10rem;
+    margin-top: 1%;
+    margin-right: 5%;
+    font-size: 30px;
+}
+
+.navbar-menu li a {
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: white;
+    position: relative;
+}
+
+/* ============================= */
+/* EFEITO UNDERLINE NO HOVER */
+/* ============================= */
+.navbar-menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: purple;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.navbar-menu li a:hover::after {
+    transform: scaleX(1);
+}

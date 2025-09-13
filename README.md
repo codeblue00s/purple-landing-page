@@ -14,9 +14,9 @@ Uma Landing Page moderna com vídeo de fundo.
 ## Como Acessar
 
 Acesse a landing page pelo GitHub Pages:
-[Ver landing page](https://SEU-USUARIO.github.io/purple-landing-page/)
+[Ver landing page](https://codeblue00s.github.io/purple-landing-page/)
 
 ## Autor
 
-**Nome:** Marcio Jardim da SIlva Filho<br>
+**Nome:** Marcio Jardim da Silva Filho<br>
 **Pseudônimo:** CodeBlue

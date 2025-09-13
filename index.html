@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Landing page moderna com vídeo de fundo e botões de ação." />
+
+    <title>Landing Page</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+</head>
+<body>
+    <!-- ============================= -->
+    <!-- NAVBAR -->
+    <!-- ============================= -->
+    <header>
+        <nav class="navbar" aria-label="Menu principal">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo da empresa">
+            </div>
+
+            <ul class="navbar-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================= -->
+    <!-- HERO -->
+    <!-- ============================= -->
+    <main>
+        <section class="hero" id="home">
+            <video class="background-video" autoplay muted loop>
+                <source src="videos/background.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+            </video>
+
+            <div class="hero-content">
+                <h1>Landing Page</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="/" class="cta-button primary">Registrar-se</a>
+                    <a href="/" class="cta-button secondary">Entrar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/* ============================= */
+/* RESET GLOBAL */
+/* ============================= */
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-decoration: none;
+}

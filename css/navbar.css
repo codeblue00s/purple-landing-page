@@ -1,5 +1,5 @@
 /* ============================= */
-/* NAVBAR (Container principal) */
+/* NAVBAR - Container principal  */
 /* ============================= */
 .navbar {
     background: linear-gradient(to left, #4b0082, #1a001a);
@@ -12,7 +12,7 @@
 }
 
 /* ============================= */
-/* LOGO */
+/* LOGO                           */
 /* ============================= */
 .logo {
     text-align: center;
@@ -24,7 +24,7 @@
 }
 
 /* ============================= */
-/* MENU DE NAVEGAÇÃO */
+/* MENU DE NAVEGAÇÃO             */
 /* ============================= */
 .navbar-menu {
     list-style: none;
@@ -41,9 +41,7 @@
     position: relative;
 }
 
-/* ============================= */
-/* EFEITO UNDERLINE NO HOVER */
-/* ============================= */
+/* Efeito underline no hover */
 .navbar-menu li a::after {
     content: "";
     position: absolute;
@@ -59,4 +57,76 @@
 
 .navbar-menu li a:hover::after {
     transform: scaleX(1);
+}
+
+/* ============================= */
+/* MEDIA QUERIES - NAVBAR        */
+/* ============================= */
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+    .navbar-menu {
+        gap: 3rem;       
+        font-size: 22px; 
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 4rem;
+        padding: 0 1rem;
+    }
+
+    .logo img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .navbar-menu {
+        display: none;             
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 16px;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to left, #4b0082, #1a001a);
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .navbar-menu.active {
+        display: flex;             
+    }
+
+    /* Ícone hamburguer */
+    .hamburger {
+        margin-right: 5%;
+        margin-top: 1%;
+        display: block;
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+}
+
+/* Telas muito pequenas */
+@media (max-width: 480px) {
+    .navbar-menu li a {
+        font-size: 14px;
+    }
 }

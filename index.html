@@ -7,22 +7,28 @@
 
     <title>Landing Page</title>
 
-    <!-- Estilos -->
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/hero.css">
 </head>
 <body>
-    <!-- ============================= -->
-    <!-- NAVBAR -->
-    <!-- ============================= -->
+    <!-- Navbar -->
     <header>
         <nav class="navbar" aria-label="Menu principal">
             <div class="logo">
                 <img src="img/logo.png" alt="Logo da empresa">
             </div>
 
-            <ul class="navbar-menu">
+            <!-- Ícone hamburger para dispositivos móveis -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Menu de navegação -->
+            <ul class="navbar-menu" id="navbar-menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -31,16 +37,16 @@
         </nav>
     </header>
 
-    <!-- ============================= -->
-    <!-- HERO -->
-    <!-- ============================= -->
+    <!-- Hero Section -->
     <main>
         <section class="hero" id="home">
+            <!-- Vídeo de fundo -->
             <video class="background-video" autoplay muted loop>
                 <source src="videos/background.mp4" type="video/mp4">
                 Seu navegador não suporta vídeos HTML5.
             </video>
 
+            <!-- Conteúdo principal da hero -->
             <div class="hero-content">
                 <h1>Landing Page</h1>
                 <p>
@@ -49,6 +55,7 @@
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
 
+                <!-- Botões de ação -->
                 <div class="hero-buttons">
                     <a href="/" class="cta-button primary">Registrar-se</a>
                     <a href="/" class="cta-button secondary">Entrar</a>
@@ -56,5 +63,15 @@
             </div>
         </section>
     </main>
+
+    <!-- Script para toggle do menu hamburger -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menu = document.getElementById('navbar-menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
